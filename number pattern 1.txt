@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int row=5,col=5;
+    int temp=1;
+    
+    for(int i=1;i<=row;i++)
+    {
+        for( int j=0;j<temp;j++)
+        {
+            cout<<i<<" " ;
+        }
+        temp++;
+        cout<<endl;
+    }
+   
+    return 0;
+}
+
+OUTPUT:
+
+1 
+2 2 
+3 3 3 
+4 4 4 4 
+5 5 5 5 5 
