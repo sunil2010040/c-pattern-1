@@ -1,0 +1,62 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n=4;
+    int a=2*n,b=2*n;
+    int temp1=0,temp2=a,temp3=n ,temp4=n ;
+    
+    
+    for(int i=0;i<n;i++)
+    {
+        for( int j=0;j<b;j++)
+        {
+            if(j<=temp1 || j>=temp2-1)
+            {
+                cout<<"* ";
+            }
+            
+            
+            
+            else
+            {
+                cout<<"  ";
+            }
+        }
+        temp1++;
+        temp2--;
+        cout<<endl;
+    }
+    
+    for(int k=n;k<a;k++)
+    {
+        for( int l=0;l<b;l++)
+        {
+            if(l>=temp2 || l<=temp1-1)
+            {
+                cout<<"* ";
+            }
+            
+        else
+            {
+                cout<<"  ";
+            }
+        }
+        temp1--;
+        temp2++;
+        cout<<endl;
+    }
+   
+    return 0;
+}
+
+OUTPUT:
+
+*             * 
+* *         * * 
+* * *     * * * 
+* * * * * * * * 
+* * * * * * * * 
+* * *     * * * 
+* *         * * 
+*             * 
